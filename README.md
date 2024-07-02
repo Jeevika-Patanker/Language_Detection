@@ -59,10 +59,10 @@ Expand the dataset to include more languages and text samples.
 Dependencies:-
 
 
-Python 3.x
-scikit-learn
-pandas
-numpy
-matplotlib
-seaborn
-datasets
+Python 3.x,
+scikit-learn,
+pandas,
+numpy,
+matplotlib,
+seaborn,
+datasets.
