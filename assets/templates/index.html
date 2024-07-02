@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Language Detection</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    
+    #content {
+        text-align: center;
+    }
+    
+    #input {
+        width: 300px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    #detectBtn {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    
+    #result {
+        font-weight: bold;
+        font-size:30px;
+    }
+</style>
+</head>
+<body>
+<div id="content">
+    <h1>Language Detection</h1>
+    <form action="http://127.0.0.1:8080/predict" method="POST">
+        <input type="text" id="input" name="text" placeholder="Enter text to detect language">
+        <input type="submit" id="detectBtn"></input>
+    </form>
+    <div>
+        <p id="result">The input language is <span id="A">{{pred}}</span></p>
+    </div>
+   
+</div>
+
+
+</body>
+</html>
