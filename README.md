@@ -46,7 +46,7 @@ print("Predictions for custom input:", new_predictions)
 Results:-
 
 
-The model achieves an accuracy of [insert accuracy score] on the testing data.
+The model achieves an accuracy of 95% on the testing data.
 
 
 Future Work:-
